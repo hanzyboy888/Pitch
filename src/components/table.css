@@ -1,0 +1,41 @@
+th {
+    font-family: 'Raleway';
+}
+
+.tableHolder {
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    width:85%;
+    height: 600px;
+    background-color: rgba(242, 238, 203, 100%);
+
+    /* border-radius: 3%; */
+    border-top-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border-top-right-radius: 6%;
+    border-bottom-left-radius: 6%;
+    box-shadow: -6px 7px 2px #888888;
+    /* border: 2px solid; */
+}
+
+
+tbody {
+    /* background-color: red; */
+}
+
+.special {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+    width: 100%;
+}

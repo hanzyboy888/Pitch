@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+.bar {
+    background-color: red;
+    display: flex;
+    flex-direction:row;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.navContainer{
+    margin-top: 20px;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
