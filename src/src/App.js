@@ -1,8 +1,18 @@
 import './App.css';
-import Navigation from '../components/navigation.js'
-import Table from '../components/table.js'
+// import Navigation from '../components/navigation.js'
+// import Table from '../components/table.js'
+import Login from '../components/Login.js'
+import Main from '../components/main.js'
+import { useState } from 'react'
 
 function App() {
+  const [isLoggedIn, setLogin] = useState(false)
+  // const isLoggedIn = false
+
+  const login = async () => {
+    // console.log(returnValue)
+    setLogin({ isLoggedIn: !isLoggedIn })
+  }
 
   const classSchedule = [
     {
@@ -24,8 +34,9 @@ function App() {
   ]
   return (
     <div className="App">
-      <Navigation />
-      <Table schedule={classSchedule} />
+      {isLoggedIn ? (
+        <Main classSchedule={classSchedule} onChange={login} />
+      ) : <Login onChange={login} />}
     </div>
   );
 }

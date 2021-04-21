@@ -1,8 +1,8 @@
 import ClassCard from './classCard.js'
-// import {
-// Box,
-// Tooltip
-// } from '@chakra-ui/react'
+import {
+    Box,
+    // Tooltip
+} from '@chakra-ui/react'
 import './daySched.css'
 
 function daySched(props) {
@@ -16,8 +16,8 @@ function daySched(props) {
                     props.sched.map((subj, i) => {
                         const same = subj.days.includes(props.day)
                         if (same === true) return < ClassCard subj={subj} key={i} />
-                        // else return <tr><Box h="24px"></Box></tr>
-                        else return null
+                        else return <tr key={i}><Box h="24px"></Box></tr>
+                        // else return null
                     }
                     )
                 }
